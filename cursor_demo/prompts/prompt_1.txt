@@ -1,0 +1,13 @@
+this is an umbraco 13 project
+it use usync version 13.3.1
+@index.html file is the static html used for building Home page
+read and analyze @index.html file to generate a homePage document type (usync file) with all fields for storing content of Home page in umbraco cms
+field could be text string, text area, richtext, block list ... depend on html structure of components in @index.html
+generate a Home node with dummy content (usync file) that its document type is homePage
+- Some notes when generating uSync files:
++ GUIDs must be exactly 32 hexadecimal characters in the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx, where each x is a hexadecimal digit (0-9, a-f).
++ Key="bf-home-001-c972-498a-bcaf-f81a6c643182" is invalid (starts with bf-home-001)
++ Key="a6c0eba6-9960-42c9-bf9b-60e150b429aj" is invalid (ends with aj - 'j' is not hex)
+refer usync file templates in @uSync_example/ folder to know how to generate usync files in correct format
+generate a HomePage.cshtml file that is linked to homePage document type 
+write code to render content of Home node in the HomePage.cshtml file
